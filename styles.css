@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set body to full height */
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+  }
+  
+  /* Create a container for centering */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80%;
+  }
+  
+  /* Style the box */
+  .box {
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: thin;
+    border-radius: 10px;
+  }
+
+  .inner-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .unit-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    background-color: white;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2220%22%20height%3D%2210%22%20viewBox%3D%220%200%2020%2010%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200l10%207.5L20%200z%22%20fill%3D%22%23bbb%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    cursor: pointer;
+  }
+  
+  .unit-dropdown:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  .unit-dropdown option {
+    background-color: white;
+    color: black;
+  }
